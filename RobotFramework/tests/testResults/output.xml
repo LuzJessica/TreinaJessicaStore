@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211128 18:06:50.108" rpa="false" schemaversion="2">
+<suite id="s1" name="TreinaJessicaStoreTests" source="C:\Users\Alex\Desktop\TreinaJessicaStore\RobotFramework\tests\TreinaJessicaStoreTests.robot">
+<test id="s1-t1" name="Test Case 2: Register user with a valid email and that does not yet exist">
+<kw name="Open Website" library="Resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211128 18:06:50.344" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20211128 18:06:50.344" endtime="20211128 18:06:51.536"/>
+</kw>
+<status status="PASS" starttime="20211128 18:06:50.343" endtime="20211128 18:06:51.536"/>
+</kw>
+<kw name="Given then I acess the URL www.treinajessicastore.com" library="Resource">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211128 18:06:51.537" level="INFO">Opening url 'https://www.treinajessicastore.com'</msg>
+<status status="PASS" starttime="20211128 18:06:51.537" endtime="20211128 18:06:51.956"/>
+</kw>
+<status status="PASS" starttime="20211128 18:06:51.536" endtime="20211128 18:06:51.956"/>
+</kw>
+<kw name="And I click in the button &quot;Login&quot; in the top right corner" library="Resource">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector(//button[@class='_1YW_5']).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20211128 18:06:51.959" level="INFO">Executing JavaScript:
+document.querySelector(//button[@class='_1YW_5']).click();
+Without any arguments.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211128 18:06:52.151" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-50.png"&gt;&lt;img src="selenium-screenshot-50.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211128 18:06:51.979" endtime="20211128 18:06:52.151"/>
+</kw>
+<msg timestamp="20211128 18:06:52.154" level="FAIL">JavascriptException: Message: javascript error: Unexpected token '}'
+  (Session info: chrome=96.0.4664.45)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x004906F3+2492147]
+	Ordinal0 [0x00429BD1+2071505]
+	Ordinal0 [0x00332478+1057912]
+	Ordinal0 [0x00334BA4+1067940]
+	Ordinal0 [0x00334A6E+1067630]
+	Ordinal0 [0x0033531A+1069850]
+	Ordinal0 [0x0038584B+1398859]
+	Ordinal0 [0x003757C3+1333187]
+	Ordinal0 [0x00384F38+1396536]
+	Ordinal0 [0x0037568B+1332875]
+	Ordinal0 [0x003521D4+1188308]
+	Ordinal0 [0x0035302F+1191983]
+	GetHandleVerifier [0x006167A6+1545030]
+	GetHandleVerifier [0x006C105C+2243580]
+	GetHandleVerifier [0x0051BC97+518199]
+	GetHandleVerifier [0x0051AD80+514336]
+	Ordinal0 [0x0042ED2D+2092333]
+	Ordinal0 [0x00432EE8+2109160]
+	Ordinal0 [0x00433022+2109474]
+	Ordinal0 [0x0043CB71+2149233]
+	BaseThreadInitThunk [0x7643FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77057A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77057A6E+238]
+</msg>
+<status status="FAIL" starttime="20211128 18:06:51.958" endtime="20211128 18:06:52.154"/>
+</kw>
+<status status="FAIL" starttime="20211128 18:06:51.957" endtime="20211128 18:06:52.155"/>
+</kw>
+<status status="FAIL" starttime="20211128 18:06:50.342" endtime="20211128 18:06:52.156">JavascriptException: Message: javascript error: Unexpected token '}'
+  (Session info: chrome=96.0.4664.45)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x004906F3+2492147]
+	Ordinal0 [0x00429BD1+2071505]
+	Ordinal0 [0x00332478+1057912]
+	Ordinal0 [0x00334BA4+1067940]
+	Ordinal0 [0x00334A6E+1067630]
+	Ordinal0 [0x0033531A+1069850]
+	Ordinal0 [0x0038584B+1398859]
+	Ordinal0 [0x003757C3+1333187]
+	Ordinal0 [0x00384F38+1396536]
+	Ordinal0 [0x0037568B+1332875]
+	Ordinal0 [0x003521D4+1188308]
+	Ordinal0 [0x0035302F+1191983]
+	GetHandleVerifier [0x006167A6+1545030]
+	GetHandleVerifier [0x006C105C+2243580]
+	GetHandleVerifier [0x0051BC97+518199]
+	GetHandleVerifier [0x0051AD80+514336]
+	Ordinal0 [0x0042ED2D+2092333]
+	Ordinal0 [0x00432EE8+2109160]
+	Ordinal0 [0x00433022+2109474]
+	Ordinal0 [0x0043CB71+2149233]
+	BaseThreadInitThunk [0x7643FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77057A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77057A6E+238]
+</status>
+</test>
+<status status="FAIL" starttime="20211128 18:06:50.111" endtime="20211128 18:06:52.163"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TreinaJessicaStoreTests">TreinaJessicaStoreTests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
